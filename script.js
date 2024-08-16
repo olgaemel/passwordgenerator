@@ -59,7 +59,7 @@ function generatePassword(lower, upper, number, symbol, length) {
 
   let finalPassword
 
-  length > 8 && length <= 20
+  length >= 4 && length <= 20
     ? (finalPassword = generatedPassword.slice(0, length))
     : alert('Password should be 4-20 symbols length')
 
